@@ -1,0 +1,3046 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/custom.css" type='text/css'>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>HarpRateQuiz</title>
+</head>
+
+<body onload="storeurl()">
+    <!-- <nav class="navbar navbar-expand-lg" style="background-color: #06705e;">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color:white;"></a>
+            <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="" style="color:white;">03254684995</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:white;">California 697 , 021 ,232</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+
+    <div class="container-fluid background_image">
+        <center><img style="height: 25vh; width: 35vh;" src="./images/logo.png" alt="LOGO"></center>
+        <form id="msform" method="post">
+            <!-- <form onsubmit="return ajaxpost()" action="https://eeltracklp.leadspediatrack.com/post.do" id="msform" method="POST"> -->
+                <!-- <ul id="progressbar">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                </ul> -->
+                <fieldset id="home_1" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container-fluid">
+                        <h3 class="text-center">Get record low rates for a new purchase mortgage or save up to </h3>
+                        <h3 class="text-center">$3,264 a year for a refinance from our top tier mortgage partners.</h3>
+                        <h1 class="text-center">What Type Of Loan?</h1>
+                        <br><br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="row">
+                                        <input type="radio" id="control_01" name="Main_Type" value="Refinance">
+                                        <label class="label_image" for="control_01">
+                                            <img src="./images/balcony-2526221_1920.jpg" alt="Italian Trulli"
+                                                class="card-pic">
+                                            <div class="text-center card-txt">
+                                                <h2>Refinance</h2>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="row">
+                                        <input type="radio" id="control_02" name="Main_Type" value="Purchase Home">
+                                        <label class="label_image" for="control_02">
+                                            <img src="./images/hotel-1979406_1920.jpg" alt="Italian Trulli"
+                                                class="card-pic">
+                                            <div class="text-center card-txt">
+                                                <h2>Purchase Home</h2>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                </div>
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+<!--                     <input type="button" name="next" class="next action-button" value="Next" />
+ -->                </fieldset>
+                    </form>
+                    <form id="msform" method="post" action="https://eeltracklp.leadspediatrack.com/post.do">
+                    <fieldset style="background-color: rgb(253, 250, 250,0.1); box-shadow: none; display: none;">
+                    </fieldset>
+                    <fieldset id="home_2" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class="text-center" style="color:black;">Great! What type of property are you looking to purchase?</h1>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="row">
+                                        <input type="radio" id="control_03" name="type_of_property" onclick="typenext()" value="Single Family">
+                                        <label class="label_image" for="control_03">
+                                            <img src="./images/house-1142297_1920.jpg" alt="Single Family"
+                                                class="card-pic">
+                                            <div class="text-center card-txt">
+                                                <h2>Single Family</h2>
+                                            </div>
+                                        </label>
+                                    </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                        <input type="radio" id="control_04" name="type_of_property" onclick="typenext()" value="Multi Family">
+                                        <label class="label_image" for="control_04">
+                                            <img src="./images/house-2511060_1920.png" alt="Multi Family"
+                                                class="card-pic">
+                                            <div class="text-center card-txt">
+                                                <h2>Multi Family</h2>
+                                            </div>
+                                        </label>
+                                    </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                        <input type="radio" id="control_05" name="type_of_property" onclick="typenext()" value="Townhouse">
+                                        <label class="label_image" for="control_05">
+                                            <img src="./images/interior-2400372_1920.png" alt="Town House"
+                                                class="card-pic">
+                                            <div class="text-center card-txt">
+                                                <h2>Town House</h2>
+                                            </div>
+                                        </label>
+                                    </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                        <input type="radio" id="control_06" name="type_of_property" onclick="typenext()" value="Condominium">
+                                        <label class="label_image" for="control_06">
+                                            <img src="./images/victorian-style-1647594_1920.png" alt="Condominium"
+                                                class="card-pic">
+                                            <div class="text-center card-txt">
+                                                <h2>Condominium</h2>
+                                            </div>
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="type_next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_22" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class="text-center py-4" style="color:black;">Estimate Your Credit Score</h1>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="credit" onclick="creditnext()" value="Excellent" id="camara100">
+                                            <label class="camara btn-3d " for="camara100">Excellent 680+</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="credit" onclick="creditnext()" value="Good" id="camara101">
+                                            <label class="camara btn-3d " for="camara101">Good 640 - 679</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="credit" onclick="creditnext()" value="Fair" id="camara102">
+                                            <label class="camara btn-3d " for="camara102">Fair 600 - 639</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="credit" onclick="creditnext()" value="Poor" id="camara103">
+                                            <label class="camara btn-3d " for="camara103">Poor <599</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                                    <br><br>
+                                </div>
+                                <!-- <input type="button" name="previous" class="previous action-button-previous"
+                                    value="Previous" /> -->
+                                <input type="button" name="next" id="credit_next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_18001" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">Loan Purpose</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="loan_purpose" id="loan_purpose" class="btwo" style="text-align-last:center;">
+                                    <option value="Cash Out">Cash Out</option>
+                                    <option value="Change My Mortgage Term">Change My Mortgage Term</option>
+                                    <option value="Convert to Adjustable Rate">Convert to Adjustable Rate</option>
+                                    <option value="Convert to Fixed Rate">Convert to Fixed Rate</option>
+                                    <option value="Debt Consolidation">Debt Consolidation</option>
+                                    <option value="Home Improvement">Home Improvement</option>
+                                    <option value="Lower My Interest Rate">Lower My Interest Rate</option>
+                                    <option value="Lower My Monthly Payment">Lower My Monthly Payment</option>
+                                    <option value=" Unknown"> Unknown</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" class="next action-button" value="Next" />
+                        <br><br><br><br><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_23" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">Please Estimate The Value Of Property</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="estimated_property_value" id="estimated_property_value" class="btwo" style="text-align-last:center;">
+                                    <option value="50000">$50,000</option>
+                                    <option value="75000">$75,000</option>
+                                    <option value="100000">$100,000</option>
+                                    <option value="125000">$125,000</option>
+                                    <option value="125000">$150,000</option>
+                                    <option value="175000">$175,000</option>
+                                    <option value="200000">$200,000</option>
+                                    <option value="225000">$225,000</option>
+                                    <option value="250000">$250,000</option>
+                                    <option value="275000">$275,000</option>
+                                    <option value="300000">$300,000</option>
+                                    <option value="325000">$325,000</option>
+                                    <option value="350000">$350,000</option>
+                                    <option value="375000">$375,000</option>
+                                    <option value="400000">$400,000</option>
+                                    <option value="425000">$425,000</option>
+                                    <option value="450000">$450,000</option>
+                                    <option value="475000">$475,000</option>
+                                    <option value="500000">$500,000</option>
+                                    <option value="525000">$525,000</option>
+                                    <option value="550000">$555,000</option>
+                                    <option value="575000">$575,000</option>
+                                    <option value="600000">$600,000</option>
+                                    <option value="625000">$625,000</option>
+                                    <option value="650000">$650,000</option>
+                                    <option value="675000">$675,000</option>
+                                    <option value="700000">$700,000</option>
+                                    <option value="725000">$725,000</option>
+                                    <option value="750000">$750,000</option>
+                                    <option value="775000">$775,000</option>
+                                    <option value="800000">$800,000</option>
+                                    <option value="825000">$825,000</option>
+                                    <option value="850000">$850,000</option>
+                                    <option value="875000">$875,000</option>
+                                    <option value="900000">$900,000</option>
+                                    <option value="925000">$925,000</option>
+                                    <option value="950000">$950,000</option>
+                                    <option value="975000">$975,000</option>
+                                    <option value="1000000">$1,000,000</option>
+                                    <option value="1025000">$1,025,000</option>
+                                    <option value="1050000">$1,050,000</option>
+                                    <option value="1075000">$1,075,000</option>
+                                    <option value="1100000">$1,100,000</option>
+                                    <option value="1125000">$1,125,000</option>
+                                    <option value="1150000">$1,150,000</option>
+                                    <option value="1175000">$1,175,000</option>
+                                    <option value="1200000">$1,200,000</option>
+                                    <option value="1225000">$1,225,000</option>
+                                    <option value="1250000">$1,250,000</option>
+                                    <option value="1275000">$1,275,000</option>
+                                    <option value="1300000">$1,300,000</option>
+                                    <option value="1325000">$1,325,000</option>
+                                    <option value="1350000">$1,350,000</option>
+                                    <option value="1375000">$1,375,000</option>
+                                    <option value="1400000">$1,400,000</option>
+                                    <option value="1425000">$1,425,000</option>
+                                    <option value="1450000">$1,450,000</option>
+                                    <option value="1475000">$1,475,000</option>
+                                    <option value="1500000">$1,500,000</option>
+                                    <option value="1525000">$1,525,000</option>
+                                    <option value="1550000">$1,550,000</option>
+                                    <option value="1575000">$1,575,000</option>
+                                    <option value="1600000">$1,600,000</option>
+                                    <option value="1625000">$1,625,000</option>
+                                    <option value="1650000">$1,650,000</option>
+                                    <option value="1675000">$1,675,000</option>
+                                    <option value="1700000">$1,700,000</option>
+                                    <option value="1725000">$1,725,000</option>
+                                    <option value="1750000">$1,750,000</option>
+                                    <option value="1775000">$1,775,000</option>
+                                    <option value="1800000">$1,800,000</option>
+                                    <option value="1825000">$1,825,000</option>
+                                    <option value="1850000">$1,850,000</option>
+                                    <option value="1875000">$1,875,000</option>
+                                    <option value="1900000">$1,900,000</option>
+                                    <option value="1925000">$1,925,000</option>
+                                    <option value="1950000">$1,950,000</option>
+                                    <option value="1975000">$1,975,000</option>
+                                    <option value="2000000">$2,000,000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" class="next action-button" value="Next" />
+                    <br><br><br><br><br><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_24" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">What is the remaining 1st mortgage balance?</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="first_mortgage_balance" id="first_mortgage_balance" class="btwo" style="text-align-last:center;">
+                                    <option value="50000">$50,000</option>
+                                    <option value="75000">$75,000</option>
+                                    <option value="100000">$100,000</option>
+                                    <option value="125000">$125,000</option>
+                                    <option value="125000">$150,000</option>
+                                    <option value="175000">$175,000</option>
+                                    <option value="200000">$200,000</option>
+                                    <option value="225000">$225,000</option>
+                                    <option value="250000">$250,000</option>
+                                    <option value="275000">$275,000</option>
+                                    <option value="300000">$300,000</option>
+                                    <option value="325000">$325,000</option>
+                                    <option value="350000">$350,000</option>
+                                    <option value="375000">$375,000</option>
+                                    <option value="400000">$400,000</option>
+                                    <option value="425000">$425,000</option>
+                                    <option value="450000">$450,000</option>
+                                    <option value="475000">$475,000</option>
+                                    <option value="500000">$500,000</option>
+                                    <option value="525000">$525,000</option>
+                                    <option value="550000">$555,000</option>
+                                    <option value="575000">$575,000</option>
+                                    <option value="600000">$600,000</option>
+                                    <option value="625000">$625,000</option>
+                                    <option value="650000">$650,000</option>
+                                    <option value="675000">$675,000</option>
+                                    <option value="700000">$700,000</option>
+                                    <option value="725000">$725,000</option>
+                                    <option value="750000">$750,000</option>
+                                    <option value="775000">$775,000</option>
+                                    <option value="800000">$800,000</option>
+                                    <option value="825000">$825,000</option>
+                                    <option value="850000">$850,000</option>
+                                    <option value="875000">$875,000</option>
+                                    <option value="900000">$900,000</option>
+                                    <option value="925000">$925,000</option>
+                                    <option value="950000">$950,000</option>
+                                    <option value="975000">$975,000</option>
+                                    <option value="1000000">$1,000,000</option>
+                                    <option value="1025000">$1,025,000</option>
+                                    <option value="1050000">$1,050,000</option>
+                                    <option value="1075000">$1,075,000</option>
+                                    <option value="1100000">$1,100,000</option>
+                                    <option value="1125000">$1,125,000</option>
+                                    <option value="1150000">$1,150,000</option>
+                                    <option value="1175000">$1,175,000</option>
+                                    <option value="1200000">$1,200,000</option>
+                                    <option value="1225000">$1,225,000</option>
+                                    <option value="1250000">$1,250,000</option>
+                                    <option value="1275000">$1,275,000</option>
+                                    <option value="1300000">$1,300,000</option>
+                                    <option value="1325000">$1,325,000</option>
+                                    <option value="1350000">$1,350,000</option>
+                                    <option value="1375000">$1,375,000</option>
+                                    <option value="1400000">$1,400,000</option>
+                                    <option value="1425000">$1,425,000</option>
+                                    <option value="1450000">$1,450,000</option>
+                                    <option value="1475000">$1,475,000</option>
+                                    <option value="1500000">$1,500,000</option>
+                                    <option value="1525000">$1,525,000</option>
+                                    <option value="1550000">$1,550,000</option>
+                                    <option value="1575000">$1,575,000</option>
+                                    <option value="1600000">$1,600,000</option>
+                                    <option value="1625000">$1,625,000</option>
+                                    <option value="1650000">$1,650,000</option>
+                                    <option value="1675000">$1,675,000</option>
+                                    <option value="1700000">$1,700,000</option>
+                                    <option value="1725000">$1,725,000</option>
+                                    <option value="1750000">$1,750,000</option>
+                                    <option value="1775000">$1,775,000</option>
+                                    <option value="1800000">$1,800,000</option>
+                                    <option value="1825000">$1,825,000</option>
+                                    <option value="1850000">$1,850,000</option>
+                                    <option value="1875000">$1,875,000</option>
+                                    <option value="1900000">$1,900,000</option>
+                                    <option value="1925000">$1,925,000</option>
+                                    <option value="1950000">$1,950,000</option>
+                                    <option value="1975000">$1,975,000</option>
+                                    <option value="2000000">$2,000,000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" class="next action-button" value="Next" />
+                        <br><br><br><br><br><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_25" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">What is the interest rate of your 1st Mortgage?</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="interest_rate" id="interest_rate" class="btwo" style="text-align-last:center;">
+                                    <option value="1">1%</option>
+                                    <option value="2">2%</option>
+                                    <option value="3">3%</option>
+                                    <option value="4">4%</option>
+                                    <option value="5">5%</option>
+                                    <option value="6">6%</option>
+                                    <option value="7">7%</option>
+                                    <option value="8">8%</option>
+                                    <option value="9">9%</option>
+                                    <option value="10">10%</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="interest_ratenext" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_26" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">What type of loan are you interest in?</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="type_of_loan" onclick="typeloannext()" value="Fixed" id="camara105">
+                                            <label class="camara btn-3d " for="camara105">Fixed</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="type_of_loan" onclick="typeloannext()" value="Adjustable" id="camara106">
+                                            <label class="camara btn-3d " for="camara106">Adjustable</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="type_of_loan" onclick="typeloannext()" value="Fixed_or_Adjustable" id="camara107">
+                                            <label class="camara btn-3d " for="camara107">Fixed Or Adjustable</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="type_loan_next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_27" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">Do you have 2nd Mortgage?</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="second_mortgage" value="Yes" id="camara108">
+                                            <label class="camara btn-3d " for="camara108">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="second_mortgage" value="No" id="camara109">
+                                            <label class="camara btn-3d " for="camara109">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ --><!--                     <input type="button" name="next" class="next action-button" value="Next" />
+ -->                </fieldset>
+                    <fieldset id="home_28" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">2nd Mortgage Balance</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="second_mortgage_Balance" id="second_mortgage_Balance" class="btwo" style="text-align-last:center;">
+                                    <option value="50000">$50,000</option>
+                                    <option value="75000">$75,000</option>
+                                    <option value="100000">$100,000</option>
+                                    <option value="125000">$125,000</option>
+                                    <option value="125000">$150,000</option>
+                                    <option value="175000">$175,000</option>
+                                    <option value="200000">$200,000</option>
+                                    <option value="225000">$225,000</option>
+                                    <option value="250000">$250,000</option>
+                                    <option value="275000">$275,000</option>
+                                    <option value="300000">$300,000</option>
+                                    <option value="325000">$325,000</option>
+                                    <option value="350000">$350,000</option>
+                                    <option value="375000">$375,000</option>
+                                    <option value="400000">$400,000</option>
+                                    <option value="425000">$425,000</option>
+                                    <option value="450000">$450,000</option>
+                                    <option value="475000">$475,000</option>
+                                    <option value="500000">$500,000</option>
+                                    <option value="525000">$525,000</option>
+                                    <option value="550000">$555,000</option>
+                                    <option value="575000">$575,000</option>
+                                    <option value="600000">$600,000</option>
+                                    <option value="625000">$625,000</option>
+                                    <option value="650000">$650,000</option>
+                                    <option value="675000">$675,000</option>
+                                    <option value="700000">$700,000</option>
+                                    <option value="725000">$725,000</option>
+                                    <option value="750000">$750,000</option>
+                                    <option value="775000">$775,000</option>
+                                    <option value="800000">$800,000</option>
+                                    <option value="825000">$825,000</option>
+                                    <option value="850000">$850,000</option>
+                                    <option value="875000">$875,000</option>
+                                    <option value="900000">$900,000</option>
+                                    <option value="925000">$925,000</option>
+                                    <option value="950000">$950,000</option>
+                                    <option value="975000">$975,000</option>
+                                    <option value="1000000">$1,000,000</option>
+                                    <option value="1025000">$1,025,000</option>
+                                    <option value="1050000">$1,050,000</option>
+                                    <option value="1075000">$1,075,000</option>
+                                    <option value="1100000">$1,100,000</option>
+                                    <option value="1125000">$1,125,000</option>
+                                    <option value="1150000">$1,150,000</option>
+                                    <option value="1175000">$1,175,000</option>
+                                    <option value="1200000">$1,200,000</option>
+                                    <option value="1225000">$1,225,000</option>
+                                    <option value="1250000">$1,250,000</option>
+                                    <option value="1275000">$1,275,000</option>
+                                    <option value="1300000">$1,300,000</option>
+                                    <option value="1325000">$1,325,000</option>
+                                    <option value="1350000">$1,350,000</option>
+                                    <option value="1375000">$1,375,000</option>
+                                    <option value="1400000">$1,400,000</option>
+                                    <option value="1425000">$1,425,000</option>
+                                    <option value="1450000">$1,450,000</option>
+                                    <option value="1475000">$1,475,000</option>
+                                    <option value="1500000">$1,500,000</option>
+                                    <option value="1525000">$1,525,000</option>
+                                    <option value="1550000">$1,550,000</option>
+                                    <option value="1575000">$1,575,000</option>
+                                    <option value="1600000">$1,600,000</option>
+                                    <option value="1625000">$1,625,000</option>
+                                    <option value="1650000">$1,650,000</option>
+                                    <option value="1675000">$1,675,000</option>
+                                    <option value="1700000">$1,700,000</option>
+                                    <option value="1725000">$1,725,000</option>
+                                    <option value="1750000">$1,750,000</option>
+                                    <option value="1775000">$1,775,000</option>
+                                    <option value="1800000">$1,800,000</option>
+                                    <option value="1825000">$1,825,000</option>
+                                    <option value="1850000">$1,850,000</option>
+                                    <option value="1875000">$1,875,000</option>
+                                    <option value="1900000">$1,900,000</option>
+                                    <option value="1925000">$1,925,000</option>
+                                    <option value="1950000">$1,950,000</option>
+                                    <option value="1975000">$1,975,000</option>
+                                    <option value="2000000">$2,000,000</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br><br>
+                        <h2 class=" py-4" style="color:black;">2nd Mortgage Interest</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="second_mortgage_Interest" id="second_mortgage_Interest" class="btwo" style="text-align-last:center;">
+                                    <option value="1">1%</option>
+                                    <option value="2">2%</option>
+                                    <option value="3">3%</option>
+                                    <option value="4">4%</option>
+                                    <option value="5">5%</option>
+                                    <option value="6">6%</option>
+                                    <option value="7">7%</option>
+                                    <option value="8">8%</option>
+                                    <option value="9">9%</option>
+                                    <option value="10">10%</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="second_mortgage_Interestnext" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_29" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">How much additional cash do you want to borrow?</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="additional_cash" id="additional_cash" class="btwo" style="text-align-last:center;">
+                                    <option value="50000">$50,000</option>
+                                    <option value="75000">$75,000</option>
+                                    <option value="100000">$100,000</option>
+                                    <option value="125000">$125,000</option>
+                                    <option value="125000">$150,000</option>
+                                    <option value="175000">$175,000</option>
+                                    <option value="200000">$200,000</option>
+                                    <option value="225000">$225,000</option>
+                                    <option value="250000">$250,000</option>
+                                    <option value="275000">$275,000</option>
+                                    <option value="300000">$300,000</option>
+                                    <option value="325000">$325,000</option>
+                                    <option value="350000">$350,000</option>
+                                    <option value="375000">$375,000</option>
+                                    <option value="400000">$400,000</option>
+                                    <option value="425000">$425,000</option>
+                                    <option value="450000">$450,000</option>
+                                    <option value="475000">$475,000</option>
+                                    <option value="500000">$500,000</option>
+                                    <option value="525000">$525,000</option>
+                                    <option value="550000">$555,000</option>
+                                    <option value="575000">$575,000</option>
+                                    <option value="600000">$600,000</option>
+                                    <option value="625000">$625,000</option>
+                                    <option value="650000">$650,000</option>
+                                    <option value="675000">$675,000</option>
+                                    <option value="700000">$700,000</option>
+                                    <option value="725000">$725,000</option>
+                                    <option value="750000">$750,000</option>
+                                    <option value="775000">$775,000</option>
+                                    <option value="800000">$800,000</option>
+                                    <option value="825000">$825,000</option>
+                                    <option value="850000">$850,000</option>
+                                    <option value="875000">$875,000</option>
+                                    <option value="900000">$900,000</option>
+                                    <option value="925000">$925,000</option>
+                                    <option value="950000">$950,000</option>
+                                    <option value="975000">$975,000</option>
+                                    <option value="1000000">$1,000,000</option>
+                                    <option value="1025000">$1,025,000</option>
+                                    <option value="1050000">$1,050,000</option>
+                                    <option value="1075000">$1,075,000</option>
+                                    <option value="1100000">$1,100,000</option>
+                                    <option value="1125000">$1,125,000</option>
+                                    <option value="1150000">$1,150,000</option>
+                                    <option value="1175000">$1,175,000</option>
+                                    <option value="1200000">$1,200,000</option>
+                                    <option value="1225000">$1,225,000</option>
+                                    <option value="1250000">$1,250,000</option>
+                                    <option value="1275000">$1,275,000</option>
+                                    <option value="1300000">$1,300,000</option>
+                                    <option value="1325000">$1,325,000</option>
+                                    <option value="1350000">$1,350,000</option>
+                                    <option value="1375000">$1,375,000</option>
+                                    <option value="1400000">$1,400,000</option>
+                                    <option value="1425000">$1,425,000</option>
+                                    <option value="1450000">$1,450,000</option>
+                                    <option value="1475000">$1,475,000</option>
+                                    <option value="1500000">$1,500,000</option>
+                                    <option value="1525000">$1,525,000</option>
+                                    <option value="1550000">$1,550,000</option>
+                                    <option value="1575000">$1,575,000</option>
+                                    <option value="1600000">$1,600,000</option>
+                                    <option value="1625000">$1,625,000</option>
+                                    <option value="1650000">$1,650,000</option>
+                                    <option value="1675000">$1,675,000</option>
+                                    <option value="1700000">$1,700,000</option>
+                                    <option value="1725000">$1,725,000</option>
+                                    <option value="1750000">$1,750,000</option>
+                                    <option value="1775000">$1,775,000</option>
+                                    <option value="1800000">$1,800,000</option>
+                                    <option value="1825000">$1,825,000</option>
+                                    <option value="1850000">$1,850,000</option>
+                                    <option value="1875000">$1,875,000</option>
+                                    <option value="1900000">$1,900,000</option>
+                                    <option value="1925000">$1,925,000</option>
+                                    <option value="1950000">$1,950,000</option>
+                                    <option value="1975000">$1,975,000</option>
+                                    <option value="2000000">$2,000,000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="additional_cashnext" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_30" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">Have you had bankruptcy/foreclosure in the
+                            past 3 years?</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_foreclosure_in_last_3_years" onclick="bankforeclosurenext()" value="Yes" id="camara110">
+                                            <label class="camara btn-3d " for="camara110">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_foreclosure_in_last_3_years" onclick="bankforeclosurenext()" value="No" id="camara111">
+                                            <label class="camara btn-3d " for="camara111">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="bank_foreclosure_next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_31" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">What is your annual income?</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="annual_income" id="annual_income" class="btwo" style="text-align-last:center;">
+                                    <option value="10000">$10,000</option>
+                                    <option value="15000">$15,000</option>
+                                    <option value="20000">$20,000</option>
+                                    <option value="25000">$25,000</option>
+                                    <option value="30000">30,000</option>
+                                    <option value="35000">$35,000</option>
+                                    <option value="40000">$40,000</option>
+                                    <option value="45000">$45,000</option>
+                                    <option value="50000">$50,000</option>
+                                    <option value="55000">$55,000</option>
+                                    <option value="60000">$60,000</option>
+                                    <option value="65000">$65,000</option>
+                                    <option value="70000">$70,000</option>
+                                    <option value="75000">$75,000</option>
+                                    <option value="80000">$80,000</option>
+                                    <option value="85000">$85,000</option>
+                                    <option value="90000">$90,000</option>
+                                    <option value="95000">$95,000</option>
+                                    <option value="100000">$100,000</option>
+                                    <option value="125000">$125,000</option>
+                                    <option value="150000">$150,000</option>
+                                    <option value="175000">$175,000</option>
+                                    <option value="200000">$200,000</option>
+                                    <option value="225000">$225,000</option>
+                                    <option value="250000">$250,000</option>
+                                    <option value="275000">$275,000</option>
+                                    <option value="300000">$300,000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="annual_incomenext" class="next action-button" value="Next" />
+                        <br><br><br><br><br><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_32" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">Any late payments in the past years?</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="Late_Mortgage_Payments" onclick="latenext()" value="None" id="camara114">
+                                            <label class="camara btn-3d " for="camara114">None</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="Late_Mortgage_Payments" onclick="latenext()" value="One" id="camara115">
+                                            <label class="camara btn-3d " for="camara115">One</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="Late_Mortgage_Payments" onclick="latenext()" value="Two or More" id="camara1120">
+                                            <label class="camara btn-3d " for="camara1120">TWO OR MORE</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="late_next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_33" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">Have you ( or your spouse ) served in
+                            Military?</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="served_US_military" onclick="militarynext()" value="Yes" id="camara116">
+                                            <label class="camara btn-3d " for="camara116">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="served_US_military" onclick="militarynext()" value="No" id="camara117">
+                                            <label class="camara btn-3d " for="camara117">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <input type="button" name="next" id="military_next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_151" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">In need of a home improvement
+                            project?<br>Speak with your local contractor today</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="in_need_of_home_improvement_project" value="Yes" id="camara33">
+                                            <label class="camara btn-3d " for="camara33">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="in_need_of_home_improvement_project" value="No" id="camara34">
+                                            <label class="camara btn-3d " for="camara34">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> -->
+                </fieldset> 
+            <fieldset id="home_161" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">What sort of project it is?</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="type_of_project" id="project" class="btwo" style="text-align-last:center;">
+                                    <option value="1-2 Rooms">1-2 Rooms</option>
+                                    <option value="3-4 Rooms">3-4 Rooms</option>
+                                    <option value="5+ Rooms">5+ Rooms</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" class="next action-button" value="Next" />
+                    <br><br><br><br><br><br><br><br>      
+                </fieldset>
+                <fieldset id="home_171" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">What Phase of your project are you in</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="phase_of_project" onclick="phasenext()" value="Planning" id="camara35">
+                                            <label class="camara btn-3d " for="camara35">Planning</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="phase_of_project" onclick="phasenext()" value="Ready to hire" id="camara36">
+                                            <label class="camara btn-3d " for="camara36">Ready to hire</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="phase_next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_181" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">When do you want to start?</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="Starting_Date" id="project" class="btwo" style="text-align-last:center;">
+                                    <option value="1–2 weeks">1–2 weeks</option>
+                                    <option value="Emergency — Today">Emergency — Today</option>
+                                    <option value="More than 2 weeks">More than 2 weeks</option>
+                                    <option value="Timing is flexible">Timing is flexible</option>
+                                    <option value="Within 1 week">Within 1 week</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" class="next action-button" value="Next" />
+                        <br><br><br><br><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_20001" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+=                        <h2 class=" py-4" style="color:black;">Have a Bank or Credit account with following?</h2><br>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknext()" value="Chase" id="camara541">
+                                            <label class="camara btn-3d" for="camara541">Chase</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknext()" value="Bank Of America" id="camara531">
+                                            <label class="camara btn-3d " for="camara531">Bank Of America</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknext()" value="Citi" id="camara512">
+                                            <label class="camara btn-3d " for="camara512">Citi</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknext()" value="Others" id="camara511">
+                                            <label class="camara btn-3d " for="camara511">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknext()" value="USAA" id="camara52111">
+                                            <label class="camara btn-3d " for="camara52111">USAA</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknext()" value="Wells Fargo" id="camara523">
+                                            <label class="camara btn-3d " for="camara523">Wells Fargo</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="bank_next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_191" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center" style="color: black !important;">Please Submit the following details.</h1>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">First Name</p>
+                                <input class="form-control" type="text" onclick="detectBrowser()" id="first_name" name="first_name"
+                                    placeholder="first_name">
+                            </div>
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Last Name</p>
+                                <input class="form-control" type="text" id="last_name" name="last_name"
+                                    placeholder="last_name">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Email Address</p>
+                                <input  class="form-control" type="email" id="email_address" name="email_address"
+                                    placeholder="Email">
+                            </div>
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Zip Code</p>
+                                <input class="form-control" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="5" type="number" id="zip_code" name="zip_code" placeholder="Zip">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Phone Home</p>
+                                <input  class="form-control" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" type="number" id="phone_home" name="phone_home"
+                                    placeholder="Phone Home">
+                            </div>
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">City</p>
+                                <input class="form-control" type="text" id="city" name="city"
+                                    placeholder="city">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Address</p>
+                                <input  class="form-control" type="text" id="address" name="address"
+                                    placeholder="Address">
+                            </div>
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Date Of Birth</p>
+                                <input  class="form-control" type="date" id="dob" name="dob">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">State</p>
+                                <input class="form-control" type="text" id="state" name="state" placeholder="State">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input class="action-button" id="redirect1" type="submit" name="submit" value="submit">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-1">
+
+                            </div>
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="text-center" style="color: black !important;"><label class="termsandc" style="background: transparent !important; width: 100% !important; border: none !important; font-size: 12px !important;"><input type="hidden" id="leadid_tcpa_disclosure"/>By clicking the button above and submitting your information you are providing your electronic signature in which you consent, acknowledge and agree to the following: (a) You agree to our<a href="https://harpratequiz.com/privacy.html" target="_blank"a>Privacy Policy</a> and <a href="https://harpratequiz.com/terms.html" target="_blank"a>Terms of Use</a> that includes binding arbitration and consent to receive notices and other communications electronically. (b) You are providing express written consent for us to share your information and connect you with up to 4 of our <a href="https://harpratequiz.com/list.html" target=_blank >Premier Partners.</a> (c) You also give us consent to share your information with and connect you to 4 <a href="https://harpratequiz.com/list.html" target=_blank >home services, insurance and solar partners</a> regarding related consumer services and products. (d) You give consent for us, or them and authorized third parties calling on our, or their behalf, to contact you for marketing purposes through automated means (e.g. automatic telephone dialing system, SMS/MMS text, artificial and pre-recorded voice messaging) at the number(s) and at the email address you have provided via telephone, mobile device (including SMS and MMS), even if your telephone number is currently listed on any state, federal or corporate Do Not Call registry. You may opt-out from SMS or Text messages at any time by replying STOP. Data and Msg rates may apply. You are not required to provide consent as a condition to purchase goods or services and you may revoke consent at any time.</label></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="hidden" id="lp_response" name="lp_response">
+                        <input type="hidden" id="trusted_form_cert_id" name="trusted_form_cert_id">
+                          
+                          <input type="hidden" id="data" name="ip_address"><br><br>
+                          <!-- <input type="hidden" id="lp_campaign_id" name="lp_campaign_id" value="60d0a88dce83c">
+
+                          <input type="hidden" id="lp_campaign_key" name="lp_campaign_key" value="Q7WMJL8tyrdYB2qxjvPN"> -->
+
+                          <!-- <input type="hidden" id="lp_s1" name="lp_s1" value="test">
+
+                          <input type="hidden" id="lp_s2" name="lp_s2" value="test"> -->
+
+                          <!--<input type="hidden" id="lp_s3" name="lp_s3" value="test">-->
+
+                          <!--<input type="hidden" id="lp_s4" name="lp_s4" value="test">-->
+
+                          <!--<input type="hidden" id="lp_s5" name="lp_s5" value="test">-->
+                          <input type="hidden" id="user_agent"  name="user_agent" value="" />
+
+                          <input type="hidden" id="landing_page" name="landing_page" value="https://harpratequiz.com">
+                        <input type="hidden" name="Main_Type" value="Refinance">
+                        <input type="hidden" name="found_home" value="None">
+                        <input type="hidden" name="signed_a_purchase_contract" value="None">
+                        <input type="hidden" name="Plan_buy_Home" value="None">
+                        <input type="hidden" name="property_use" value="Primary Residence">
+                        <input type="hidden" name="down_payment" value="None">
+                        <input type="hidden" name="looking_type_property" value="None">
+                        <input type="hidden" name="lp_offer_id" value="13" /> 
+                        <input type="hidden" name="lp_campaign_id" value="60f1e26e2c926" />   
+                        <!-- The rest of the fields name must match what you have set in the vertical -->   
+                        <input type="hidden" name="lp_redirect_url" id="successUrl" value="" /> 
+                        <!-- lp_redirect_url: Optional redirect url when the lead is accepted -->  
+                        <input type="hidden" name="lp_redirect_fail_url" value="https://harpratequiz.com/failed.html" /> 
+                        <input type="hidden" name="lp_s1" id="lp_s1" value="DirectPage">
+                        <input type="hidden" name="lp_s2" id="lp_s2" value="">
+                        <input type="hidden" name="tcpa_consent_text" value="BY CLICKING THE BUTTON ABOVE AND SUBMITTING YOUR INFORMATION YOU ARE PROVIDING YOUR ELECTRONIC SIGNATURE IN WHICH YOU CONSENT, ACKNOWLEDGE AND AGREE TO THE FOLLOWING: (A) YOU AGREE TO OURPRIVACY POLICY AND TERMS OF USE THAT INCLUDES BINDING ARBITRATION AND CONSENT TO RECEIVE NOTICES AND OTHER COMMUNICATIONS ELECTRONICALLY. (B) YOU ARE PROVIDING EXPRESS WRITTEN CONSENT FOR US TO SHARE YOUR INFORMATION AND CONNECT YOU WITH UP TO 4 OF OUR PREMIER PARTNERS. (C) YOU ALSO GIVE US CONSENT TO SHARE YOUR INFORMATION WITH AND CONNECT YOU TO 4 HOME SERVICES, INSURANCE AND SOLAR PARTNERS REGARDING RELATED CONSUMER SERVICES AND PRODUCTS. (D) YOU GIVE CONSENT FOR US, OR THEM AND AUTHORIZED THIRD PARTIES CALLING ON OUR, OR THEIR BEHALF, TO CONTACT YOU FOR MARKETING PURPOSES THROUGH AUTOMATED MEANS (E.G. AUTOMATIC TELEPHONE DIALING SYSTEM, SMS/MMS TEXT, ARTIFICIAL AND PRE-RECORDED VOICE MESSAGING) AT THE NUMBER(S) AND AT THE EMAIL ADDRESS YOU HAVE PROVIDED VIA TELEPHONE, MOBILE DEVICE (INCLUDING SMS AND MMS), EVEN IF YOUR TELEPHONE NUMBER IS CURRENTLY LISTED ON ANY STATE, FEDERAL OR CORPORATE DO NOT CALL REGISTRY. YOU MAY OPT-OUT FROM SMS OR TEXT MESSAGES AT ANY TIME BY REPLYING STOP. DATA AND MSG RATES MAY APPLY. YOU ARE NOT REQUIRED TO PROVIDE CONSENT AS A CONDITION TO PURCHASE GOODS OR SERVICES AND YOU MAY REVOKE CONSENT AT ANY TIME.">
+                        <input type="hidden" name="tcpa" value="true">
+                        <input id="leadid_token" name="jornaya_lead_id" type="hidden" value=""/>
+
+
+                    </form>
+                    <form id="msform" method="post" action="https://eeltracklp.leadspediatrack.com/post.do">
+                        <fieldset style="background-color: rgb(253, 250, 250,0.1); box-shadow: none; display: none;">
+                    </fieldset>
+                        <fieldset id="home_2111" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class="text-center" style="color:black;">Great! What type of property are you looking to purchase?</h1>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="row">
+                                        <input type="radio" id="control_031" name="type_of_property" onclick="typenexta()" value="Single Family">
+                                        <label class="label_image" for="control_031">
+                                            <img src="./images/house-1142297_1920.jpg" alt="Single Family"
+                                                class="card-pic">
+                                            <div class="text-center card-txt">
+                                                <h2>Single Family</h2>
+                                            </div>
+                                        </label>
+                                    </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                        <input type="radio" id="control_041" name="type_of_property" onclick="typenexta()" value="Multi Family">
+                                        <label class="label_image" for="control_041">
+                                            <img src="./images/house-2511060_1920.png" alt="Multi Family"
+                                                class="card-pic">
+                                            <div class="text-center card-txt">
+                                                <h2>Multi Family</h2>
+                                            </div>
+                                        </label>
+                                    </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                        <input type="radio" id="control_051" name="type_of_property" onclick="typenexta()" value="Townhouse">
+                                        <label class="label_image" for="control_051">
+                                            <img src="./images/interior-2400372_1920.png" alt="Town House"
+                                                class="card-pic">
+                                            <div class="text-center card-txt">
+                                                <h2>Town House</h2>
+                                            </div>
+                                        </label>
+                                    </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                        <input type="radio" id="control_061" name="type_of_property" onclick="typenexta()" value="Condominium">
+                                        <label class="label_image" for="control_061">
+                                            <img src="./images/victorian-style-1647594_1920.png" alt="Condominium"
+                                                class="card-pic">
+                                            <div class="text-center card-txt">
+                                                <h2>Condominium</h2>
+                                            </div>
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="type_nexta" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_3" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class="text-center" style="color:black;">Estimate Your Credit Score</h1>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="section">
+                                        <div class="container">
+                                            <input type="radio" name="credit" onclick="creditnexta()" value="Excellent" id="camara">
+                                            <label class="camara btn-3d " for="camara">Excellent</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="section">
+                                        <div class="container">
+                                            <input type="radio" name="credit" onclick="creditnexta()" value="Fair" id="camara1">
+                                            <label class="camara btn-3d " for="camara1">Fair</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="section">
+                                        <div class="container">
+                                            <input type="radio" name="credit" onclick="creditnexta()" value="Good" id="camara2">
+                                            <label class="camara btn-3d " for="camara2">Good</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="section">
+                                        <div class="container">
+                                            <input type="radio" name="credit" onclick="creditnexta()" value="Poor" id="camara3">
+                                            <label class="camara btn-3d " for="camara3">Poor</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                                    <br><br>
+                                </div>
+                                <!-- <input type="button" name="previous" class="previous action-button-previous"
+                                    value="Previous" /> -->
+                                <input type="button" name="next" id="credit_nexta" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_18001" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">Loan Purpose</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="loan_purpose" id="loan_purposea" class="btwo" style="text-align-last:center;">
+                                    <option value="Cash Out">Cash Out</option>
+                                    <option value="Change My Mortgage Term">Change My Mortgage Term</option>
+                                    <option value="Convert to Adjustable Rate">Convert to Adjustable Rate</option>
+                                    <option value="Convert to Fixed Rate">Convert to Fixed Rate</option>
+                                    <option value="Debt Consolidation">Debt Consolidation</option>
+                                    <option value="Home Improvement">Home Improvement</option>
+                                    <option value="Lower My Interest Rate">Lower My Interest Rate</option>
+                                    <option value="Lower My Monthly Payment">Lower My Monthly Payment</option>
+                                    <option value="Unknown">Unknown</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" class="next action-button" value="Next" />
+                        <br><br><br><br><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_4" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">Have you found a Home?</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="found_home" value="yes" id="camara5">
+                                            <label class="camara btn-3d " for="camara5">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="found_home" value="no" id="camara6">
+                                            <label class="camara btn-3d " for="camara6">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_5" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">Have you signed a Purchase Contract?</h1>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="signed_a_purchase_contract" onclick="signednext()" value="yes" id="camara7">
+                                            <label class="camara btn-3d " for="camara7">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="signed_a_purchase_contract" onclick="signednext()" value="no" id="camara8">
+                                            <label class="camara btn-3d " for="camara8">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="signed_next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_6" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">When do you plan to buy home?</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="Plan_buy_Home" onclick="plannext()" value="Already" id="camara9">
+                                            <label class="camara btn-3d " for="camara9">Already Under Contract</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="Plan_buy_Home" onclick="plannext()" value="Immediately" id="camara10">
+                                            <label class="camara btn-3d " for="camara10">I am making an offer</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="Plan_buy_Home" onclick="plannext()" value="Currently_shopping" id="camara11">
+                                            <label class="camara btn-3d " for="camara11">Currently Shopping & considering options</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="Plan_buy_Home" onclick="plannext()" value="Soon"
+                                                id="camara12">
+                                            <label class="camara btn-3d " for="camara12">Soon With in Couple of
+                                                months</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="Plan_buy_Home" onclick="plannext()" value="Not Sure" id="camara13">
+                                            <label class="camara btn-3d " for="camara13">Not Sure</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="plan_next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_7" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">What type of property you are looking for?
+                        </h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="property_use" onclick="propertynext()" value="Primary Residence" id="camara14">
+                                            <label class="camara btn-3d " for="camara14">Primary Residence</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="property_use" onclick="propertynext()" value="Vacation Property" id="camara15">
+                                            <label class="camara btn-3d " for="camara15">Vacation Property</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="property_use" onclick="propertynext()" value="Investment Property" id="camara16">
+                                            <label class="camara btn-3d " for="camara16">Investment Property</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="property_next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_8" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">Please Estimate The Value Of Property</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="estimated_property_value" id="estimated_property_value" class="btwo" style="text-align-last:center;">
+                                    <option value="50000">$50,000</option>
+                                    <option value="75000">$75,000</option>
+                                    <option value="100000">$100,000</option>
+                                    <option value="125000">$125,000</option>
+                                    <option value="125000">$150,000</option>
+                                    <option value="175000">$175,000</option>
+                                    <option value="200000">$200,000</option>
+                                    <option value="225000">$225,000</option>
+                                    <option value="250000">$250,000</option>
+                                    <option value="275000">$275,000</option>
+                                    <option value="300000">$300,000</option>
+                                    <option value="325000">$325,000</option>
+                                    <option value="350000">$350,000</option>
+                                    <option value="375000">$375,000</option>
+                                    <option value="400000">$400,000</option>
+                                    <option value="425000">$425,000</option>
+                                    <option value="450000">$450,000</option>
+                                    <option value="475000">$475,000</option>
+                                    <option value="500000">$500,000</option>
+                                    <option value="525000">$525,000</option>
+                                    <option value="550000">$555,000</option>
+                                    <option value="575000">$575,000</option>
+                                    <option value="600000">$600,000</option>
+                                    <option value="625000">$625,000</option>
+                                    <option value="650000">$650,000</option>
+                                    <option value="675000">$675,000</option>
+                                    <option value="700000">$700,000</option>
+                                    <option value="725000">$725,000</option>
+                                    <option value="750000">$750,000</option>
+                                    <option value="775000">$775,000</option>
+                                    <option value="800000">$800,000</option>
+                                    <option value="825000">$825,000</option>
+                                    <option value="850000">$850,000</option>
+                                    <option value="875000">$875,000</option>
+                                    <option value="900000">$900,000</option>
+                                    <option value="925000">$925,000</option>
+                                    <option value="950000">$950,000</option>
+                                    <option value="975000">$975,000</option>
+                                    <option value="1000000">$1,000,000</option>
+                                    <option value="1025000">$1,025,000</option>
+                                    <option value="1050000">$1,050,000</option>
+                                    <option value="1075000">$1,075,000</option>
+                                    <option value="1100000">$1,100,000</option>
+                                    <option value="1125000">$1,125,000</option>
+                                    <option value="1150000">$1,150,000</option>
+                                    <option value="1175000">$1,175,000</option>
+                                    <option value="1200000">$1,200,000</option>
+                                    <option value="1225000">$1,225,000</option>
+                                    <option value="1250000">$1,250,000</option>
+                                    <option value="1275000">$1,275,000</option>
+                                    <option value="1300000">$1,300,000</option>
+                                    <option value="1325000">$1,325,000</option>
+                                    <option value="1350000">$1,350,000</option>
+                                    <option value="1375000">$1,375,000</option>
+                                    <option value="1400000">$1,400,000</option>
+                                    <option value="1425000">$1,425,000</option>
+                                    <option value="1450000">$1,450,000</option>
+                                    <option value="1475000">$1,475,000</option>
+                                    <option value="1500000">$1,500,000</option>
+                                    <option value="1525000">$1,525,000</option>
+                                    <option value="1550000">$1,550,000</option>
+                                    <option value="1575000">$1,575,000</option>
+                                    <option value="1600000">$1,600,000</option>
+                                    <option value="1625000">$1,625,000</option>
+                                    <option value="1650000">$1,650,000</option>
+                                    <option value="1675000">$1,675,000</option>
+                                    <option value="1700000">$1,700,000</option>
+                                    <option value="1725000">$1,725,000</option>
+                                    <option value="1750000">$1,750,000</option>
+                                    <option value="1775000">$1,775,000</option>
+                                    <option value="1800000">$1,800,000</option>
+                                    <option value="1825000">$1,825,000</option>
+                                    <option value="1850000">$1,850,000</option>
+                                    <option value="1875000">$1,875,000</option>
+                                    <option value="1900000">$1,900,000</option>
+                                    <option value="1925000">$1,925,000</option>
+                                    <option value="1950000">$1,950,000</option>
+                                    <option value="1975000">$1,975,000</option>
+                                    <option value="2000000">$2,000,000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" class="next action-button" value="Next" />
+                    <br><br><br><br><br><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_9" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">How much is your Down Payment?</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="down_payment" id="down_payment" class="btwo" style="text-align-last:center;">
+                                    <option value="50000">$50,000</option>
+                                    <option value="75000">$75,000</option>
+                                    <option value="100000">$100,000</option>
+                                    <option value="125000">$125,000</option>
+                                    <option value="125000">$150,000</option>
+                                    <option value="175000">$175,000</option>
+                                    <option value="200000">$200,000</option>
+                                    <option value="225000">$225,000</option>
+                                    <option value="250000">$250,000</option>
+                                    <option value="275000">$275,000</option>
+                                    <option value="300000">$300,000</option>
+                                    <option value="325000">$325,000</option>
+                                    <option value="350000">$350,000</option>
+                                    <option value="375000">$375,000</option>
+                                    <option value="400000">$400,000</option>
+                                    <option value="425000">$425,000</option>
+                                    <option value="450000">$450,000</option>
+                                    <option value="475000">$475,000</option>
+                                    <option value="500000">$500,000</option>
+                                    <option value="525000">$525,000</option>
+                                    <option value="550000">$555,000</option>
+                                    <option value="575000">$575,000</option>
+                                    <option value="600000">$600,000</option>
+                                    <option value="625000">$625,000</option>
+                                    <option value="650000">$650,000</option>
+                                    <option value="675000">$675,000</option>
+                                    <option value="700000">$700,000</option>
+                                    <option value="725000">$725,000</option>
+                                    <option value="750000">$750,000</option>
+                                    <option value="775000">$775,000</option>
+                                    <option value="800000">$800,000</option>
+                                    <option value="825000">$825,000</option>
+                                    <option value="850000">$850,000</option>
+                                    <option value="875000">$875,000</option>
+                                    <option value="900000">$900,000</option>
+                                    <option value="925000">$925,000</option>
+                                    <option value="950000">$950,000</option>
+                                    <option value="975000">$975,000</option>
+                                    <option value="1000000">$1,000,000</option>
+                                    <option value="1025000">$1,025,000</option>
+                                    <option value="1050000">$1,050,000</option>
+                                    <option value="1075000">$1,075,000</option>
+                                    <option value="1100000">$1,100,000</option>
+                                    <option value="1125000">$1,125,000</option>
+                                    <option value="1150000">$1,150,000</option>
+                                    <option value="1175000">$1,175,000</option>
+                                    <option value="1200000">$1,200,000</option>
+                                    <option value="1225000">$1,225,000</option>
+                                    <option value="1250000">$1,250,000</option>
+                                    <option value="1275000">$1,275,000</option>
+                                    <option value="1300000">$1,300,000</option>
+                                    <option value="1325000">$1,325,000</option>
+                                    <option value="1350000">$1,350,000</option>
+                                    <option value="1375000">$1,375,000</option>
+                                    <option value="1400000">$1,400,000</option>
+                                    <option value="1425000">$1,425,000</option>
+                                    <option value="1450000">$1,450,000</option>
+                                    <option value="1475000">$1,475,000</option>
+                                    <option value="1500000">$1,500,000</option>
+                                    <option value="1525000">$1,525,000</option>
+                                    <option value="1550000">$1,550,000</option>
+                                    <option value="1575000">$1,575,000</option>
+                                    <option value="1600000">$1,600,000</option>
+                                    <option value="1625000">$1,625,000</option>
+                                    <option value="1650000">$1,650,000</option>
+                                    <option value="1675000">$1,675,000</option>
+                                    <option value="1700000">$1,700,000</option>
+                                    <option value="1725000">$1,725,000</option>
+                                    <option value="1750000">$1,750,000</option>
+                                    <option value="1775000">$1,775,000</option>
+                                    <option value="1800000">$1,800,000</option>
+                                    <option value="1825000">$1,825,000</option>
+                                    <option value="1850000">$1,850,000</option>
+                                    <option value="1875000">$1,875,000</option>
+                                    <option value="1900000">$1,900,000</option>
+                                    <option value="1925000">$1,925,000</option>
+                                    <option value="1950000">$1,950,000</option>
+                                    <option value="1975000">$1,975,000</option>
+                                    <option value="2000000">$2,000,000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br><br><br><br><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" class="next action-button" value="Next" />
+                        <br><br><br><br><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_10" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">Type Of Loan</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="type_of_loan" onclick="typeloannexta()" value="Fixed" id="camara22">
+                                            <label class="camara btn-3d " for="camara22">Fixed</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="type_of_loan" onclick="typeloannexta()" value="Adjustable" id="camara23">
+                                            <label class="camara btn-3d " for="camara23">Adjustable</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="type_of_loan" onclick="typeloannexta()" value="Fixed_or_Adjustable" id="camara24">
+                                            <label class="camara btn-3d " for="camara24">Fixed Or Adjustable</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="type_loan_nexta" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_11" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">Have you had bankruptey/ foreclosure in the
+                            past 3 years?</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_foreclosure_in_last_3_years" onclick="bankforeclosurenexta()" value="Yes" id="camara25">
+                                            <label class="camara btn-3d " for="camara25">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_foreclosure_in_last_3_years" onclick="bankforeclosurenexta()" value="No" id="camara26">
+                                            <label class="camara btn-3d " for="camara26">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="bank_foreclosure_nexta" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_12" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">What is your annual income?</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="annual_income" id="annual_income" class="btwo" style="text-align-last:center;">
+                                    <option value="50000">$50,000</option>
+                                    <option value="75000">$75,000</option>
+                                    <option value="100000">$100,000</option>
+                                    <option value="125000">$125,000</option>
+                                    <option value="125000">$150,000</option>
+                                    <option value="175000">$175,000</option>
+                                    <option value="200000">$200,000</option>
+                                    <option value="225000">$225,000</option>
+                                    <option value="250000">$250,000</option>
+                                    <option value="275000">$275,000</option>
+                                    <option value="300000">$300,000</option>
+                                    <option value="325000">$325,000</option>
+                                    <option value="350000">$350,000</option>
+                                    <option value="375000">$375,000</option>
+                                    <option value="400000">$400,000</option>
+                                    <option value="425000">$425,000</option>
+                                    <option value="450000">$450,000</option>
+                                    <option value="475000">$475,000</option>
+                                    <option value="500000">$500,000</option>
+                                    <option value="525000">$525,000</option>
+                                    <option value="550000">$555,000</option>
+                                    <option value="575000">$575,000</option>
+                                    <option value="600000">$600,000</option>
+                                    <option value="625000">$625,000</option>
+                                    <option value="650000">$650,000</option>
+                                    <option value="675000">$675,000</option>
+                                    <option value="700000">$700,000</option>
+                                    <option value="725000">$725,000</option>
+                                    <option value="750000">$750,000</option>
+                                    <option value="775000">$775,000</option>
+                                    <option value="800000">$800,000</option>
+                                    <option value="825000">$825,000</option>
+                                    <option value="850000">$850,000</option>
+                                    <option value="875000">$875,000</option>
+                                    <option value="900000">$900,000</option>
+                                    <option value="925000">$925,000</option>
+                                    <option value="950000">$950,000</option>
+                                    <option value="975000">$975,000</option>
+                                    <option value="1000000">$1,000,000</option>
+                                    <option value="1025000">$1,025,000</option>
+                                    <option value="1050000">$1,050,000</option>
+                                    <option value="1075000">$1,075,000</option>
+                                    <option value="1100000">$1,100,000</option>
+                                    <option value="1125000">$1,125,000</option>
+                                    <option value="1150000">$1,150,000</option>
+                                    <option value="1175000">$1,175,000</option>
+                                    <option value="1200000">$1,200,000</option>
+                                    <option value="1225000">$1,225,000</option>
+                                    <option value="1250000">$1,250,000</option>
+                                    <option value="1275000">$1,275,000</option>
+                                    <option value="1300000">$1,300,000</option>
+                                    <option value="1325000">$1,325,000</option>
+                                    <option value="1350000">$1,350,000</option>
+                                    <option value="1375000">$1,375,000</option>
+                                    <option value="1400000">$1,400,000</option>
+                                    <option value="1425000">$1,425,000</option>
+                                    <option value="1450000">$1,450,000</option>
+                                    <option value="1475000">$1,475,000</option>
+                                    <option value="1500000">$1,500,000</option>
+                                    <option value="1525000">$1,525,000</option>
+                                    <option value="1550000">$1,550,000</option>
+                                    <option value="1575000">$1,575,000</option>
+                                    <option value="1600000">$1,600,000</option>
+                                    <option value="1625000">$1,625,000</option>
+                                    <option value="1650000">$1,650,000</option>
+                                    <option value="1675000">$1,675,000</option>
+                                    <option value="1700000">$1,700,000</option>
+                                    <option value="1725000">$1,725,000</option>
+                                    <option value="1750000">$1,750,000</option>
+                                    <option value="1775000">$1,775,000</option>
+                                    <option value="1800000">$1,800,000</option>
+                                    <option value="1825000">$1,825,000</option>
+                                    <option value="1850000">$1,850,000</option>
+                                    <option value="1875000">$1,875,000</option>
+                                    <option value="1900000">$1,900,000</option>
+                                    <option value="1925000">$1,925,000</option>
+                                    <option value="1950000">$1,950,000</option>
+                                    <option value="1975000">$1,975,000</option>
+                                    <option value="2000000">$2,000,000</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="annual_incomenext" class="next action-button" value="Next" />
+                        <br><br><br><br><br><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_13" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+=                        <h1 class=" text-center py-4" style="color:black;">Any late payments in the past years?</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="Late_Mortgage_Payments" onclick="latenexta()" value="None" id="camara29">
+                                            <label class="camara btn-3d " for="camara29">None</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="Late_Mortgage_Payments" onclick="latenexta()" value="One" id="camara30">
+                                            <label class="camara btn-3d " for="camara30">One</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="Late_Mortgage_Payments" onclick="latenexta()" value="Two or More" id="camara3092">
+                                            <label class="camara btn-3d " for="camara3092">Two or More</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="late_nexta" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_14" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">Have you ( or your spouse ) served in
+                            Military?</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="served_US_military" onclick="militarynexta()" value="Yes" id="camara31">
+                                            <label class="camara btn-3d " for="camara31">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="served_US_military" onclick="militarynexta()" value="No" id="camara32">
+                                            <label class="camara btn-3d " for="camara32">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="military_nexta" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_15" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">In need of a home improvement
+                            project?<br>Speak with your local contractor today</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="in_need_of_home_improvement_project" value="Yes" id="camara331">
+                                            <label class="camara btn-3d " for="camara331">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="in_need_of_home_improvement_project" value="No" id="camara341">
+                                            <label class="camara btn-3d " for="camara341">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ --><!--                     <input type="button" name="next" class="next action-button" value="Next" />
+ -->                </fieldset>
+                <fieldset id="home_16" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">What sort of project it is?</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="type_of_project" id="project" class="btwo" style="text-align-last:center;">
+                                    <option value="1-2 Rooms">1-2 Rooms</option>
+                                    <option value="3-4 Rooms">3-4 Rooms</option>
+                                    <option value="5+ Rooms">5+ Rooms</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" class="next action-button" value="Next" />
+                    <br><br><br><br><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_17" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center py-4" style="color:black;">What Phase of your project are you in</h1>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="phase_of_project" onclick="phasenexta()" value="Planning" id="camara351">
+                                            <label class="camara btn-3d " for="camara351">Planning</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="phase_of_project" onclick="phasenexta()" value="Ready to hire" id="camara361">
+                                            <label class="camara btn-3d " for="camara361">Ready to hire</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="phase_nexta" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_18" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h2 class=" py-4" style="color:black;">When do you want to start?</h2><br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <select name="Starting_Date" id="project" class="btwo" style="text-align-last:center;">
+                                    <option value="1–2 weeks">1–2 weeks</option>
+                                    <option value="Emergency — Today">Emergency — Today</option>
+                                    <option value="More than 2 weeks">More than 2 weeks</option>
+                                    <option value="Timing is flexible">Timing is flexible</option>
+                                    <option value="Within 1 week">Within 1 week</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" class="next action-button" value="Next" />
+                        <br><br><br><br><br><br><br><br>
+                </fieldset>
+                <fieldset id="home_2000" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+=                        <h2 class=" py-4" style="color:black;">Have a Bank or Credit account with following?</h2><br>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknexta()" value="Chase" id="camara5411">
+                                            <label class="camara btn-3d" for="camara5411">Chase</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknexta()" value="Bank Of America" id="camara5311">
+                                            <label class="camara btn-3d " for="camara5311">Bank Of America</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknexta()" value="Citi" id="camara5121">
+                                            <label class="camara btn-3d " for="camara5121">Citi</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknexta()" value="Others" id="camara5111">
+                                            <label class="camara btn-3d " for="camara5111">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknexta()" value="USAA" id="camara521111">
+                                            <label class="camara btn-3d " for="camara521111">USAA</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class='section'>
+                                        <div class='container'>
+                                            <input type="radio" name="bank_or_credit_provider" onclick="banknexta()" value="Wells Fargo" id="camara5231">
+                                            <label class="camara btn-3d " for="camara5231">Wells Fargo</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+<!--                     <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+ -->                    <input type="button" name="next" id="bank_nexta" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_19" style="background-color: rgb(253, 250, 250,0.1); box-shadow: none;">
+                    <div class="container">
+                        <h1 class=" text-center" style="color: black !important;">Please Submit the following details.</h1>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">First Name</p>
+                                <input id="first_name" class="form-control" type="text" onclick="detectBrowser()" name="first_name"
+                                    placeholder="first_name">
+                            </div>
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Last Name</p>
+                                <input id="last_name" class="form-control" type="text" name="last_name"
+                                    placeholder="last_name">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Email Address</p>
+                                <input id="email_address" class="form-control" type="email" name="email_address"
+                                    placeholder="Email">
+                            </div>
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Zip Code</p>
+                                <input id="zip_code" class="form-control" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="5" type="number" name="zip_code" placeholder="Zip">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Phone Home</p>
+                                <input id="phone_home" class="form-control" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" type="number" name="phone_home"
+                                    placeholder="Phone Home">
+                            </div>
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">City</p>
+                                <input id="city" class="form-control" type="text" name="city"
+                                    placeholder="city">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Address</p>
+                                <input id="address" class="form-control" type="text" name="address"
+                                    placeholder="Address">
+                            </div>
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">Date Of Birth</p>
+                                <input class="form-control" type="date" name="dob">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p style="color: black; text-align: left; font-size: 20px;">State</p>
+                                <input id="state" class="form-control" type="text" name="state" placeholder="State">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input class="action-button" id="redirect1" type="submit" name="submit" value="submit">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-1">
+
+                            </div>
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="text-center" style="color: black !important;"><label class="termsandc" style="background: transparent !important; width: 100% !important; border: none !important; font-size: 12px !important;"><input type="hidden" id="leadid_tcpa_disclosure"/>By clicking the button above and submitting your information you are providing your electronic signature in which you consent, acknowledge and agree to the following: (a) You agree to our<a href="https://harpratequiz.com/privacy.html" target="_blank"a>Privacy Policy</a> and <a href="https://harpratequiz.com/terms.html" target="_blank"a>Terms of Use</a> that includes binding arbitration and consent to receive notices and other communications electronically. (b) You are providing express written consent for us to share your information and connect you with up to 4 of our <a href="https://harpratequiz.com/list.html" target=_blank >Premier Partners.</a> (c) You also give us consent to share your information with and connect you to 4 <a href="https://harpratequiz.com/list.html" target=_blank >home services, insurance and solar partners</a> regarding related consumer services and products. (d) You give consent for us, or them and authorized third parties calling on our, or their behalf, to contact you for marketing purposes through automated means (e.g. automatic telephone dialing system, SMS/MMS text, artificial and pre-recorded voice messaging) at the number(s) and at the email address you have provided via telephone, mobile device (including SMS and MMS), even if your telephone number is currently listed on any state, federal or corporate Do Not Call registry. You may opt-out from SMS or Text messages at any time by replying STOP. Data and Msg rates may apply. You are not required to provide consent as a condition to purchase goods or services and you may revoke consent at any time.</label></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="hidden" id="lp_response" name="lp_response">
+                        <input type="hidden" id="trusted_form_certid" name="trusted_form_certid">
+                          
+                          <input type="hidden" id="data" name="ip_address"><br><br>
+                          <!-- <input type="hidden" id="lp_campaign_id" name="lp_campaign_id" value="60d0a88dce83c">
+
+                          <input type="hidden" id="lp_campaign_key" name="lp_campaign_key" value="Q7WMJL8tyrdYB2qxjvPN"> -->
+
+                          <!-- <input type="hidden" id="lp_s1" name="lp_s1" value="test">
+
+                          <input type="hidden" id="lp_s2" name="lp_s2" value="test"> -->
+
+                          <input type="hidden" id="lp_s3" name="lp_s3" value="">
+
+                          <input type="hidden" id="lp_s4" name="lp_s4" value="">
+
+                          <input type="hidden" id="lp_s5" name="lp_s5" value="">
+                          <input type="hidden" id="user_agent"  name="user_agent" value="" />
+
+                          <input type="hidden" id="LandingPage" name="landing_page" value="https://harpratequiz.com">
+                        <input type="hidden" name="Main_Type" value="Purchase Home">
+                        <input type="hidden" name="first_mortgage_balance" value="None">
+                        <input type="hidden" name="second_mortgage" value="None">
+                        <input type="hidden" name="second_mortgage_Interest" value="None">
+                        <input type="hidden" name="second_mortgage_Balance" value="None">
+                        <input type="hidden" name="interest_rate" value="None">
+                        <input type="hidden" name="additional_cash" value="None">
+                        <input type="hidden" name="tcpa_consent_text" value="BY CLICKING THE BUTTON ABOVE AND SUBMITTING YOUR INFORMATION YOU ARE PROVIDING YOUR ELECTRONIC SIGNATURE IN WHICH YOU CONSENT, ACKNOWLEDGE AND AGREE TO THE FOLLOWING: (A) YOU AGREE TO OURPRIVACY POLICY AND TERMS OF USE THAT INCLUDES BINDING ARBITRATION AND CONSENT TO RECEIVE NOTICES AND OTHER COMMUNICATIONS ELECTRONICALLY. (B) YOU ARE PROVIDING EXPRESS WRITTEN CONSENT FOR US TO SHARE YOUR INFORMATION AND CONNECT YOU WITH UP TO 4 OF OUR PREMIER PARTNERS. (C) YOU ALSO GIVE US CONSENT TO SHARE YOUR INFORMATION WITH AND CONNECT YOU TO 4 HOME SERVICES, INSURANCE AND SOLAR PARTNERS REGARDING RELATED CONSUMER SERVICES AND PRODUCTS. (D) YOU GIVE CONSENT FOR US, OR THEM AND AUTHORIZED THIRD PARTIES CALLING ON OUR, OR THEIR BEHALF, TO CONTACT YOU FOR MARKETING PURPOSES THROUGH AUTOMATED MEANS (E.G. AUTOMATIC TELEPHONE DIALING SYSTEM, SMS/MMS TEXT, ARTIFICIAL AND PRE-RECORDED VOICE MESSAGING) AT THE NUMBER(S) AND AT THE EMAIL ADDRESS YOU HAVE PROVIDED VIA TELEPHONE, MOBILE DEVICE (INCLUDING SMS AND MMS), EVEN IF YOUR TELEPHONE NUMBER IS CURRENTLY LISTED ON ANY STATE, FEDERAL OR CORPORATE DO NOT CALL REGISTRY. YOU MAY OPT-OUT FROM SMS OR TEXT MESSAGES AT ANY TIME BY REPLYING STOP. DATA AND MSG RATES MAY APPLY. YOU ARE NOT REQUIRED TO PROVIDE CONSENT AS A CONDITION TO PURCHASE GOODS OR SERVICES AND YOU MAY REVOKE CONSENT AT ANY TIME.">
+                        <input type="hidden" name="tcpa" value="true">
+                        <!-- <input type="hidden" name="tcpa_consent" value="1" /> -->
+                        <input type="hidden" name="lp_offer_id" value="13" /> 
+                        <input type="hidden" name="lp_campaign_id" value="60f1e26e2c926" />   
+                        <!-- The rest of the fields name must match what you have set in the vertical -->   
+                        <input type="hidden" name="lp_redirect_url" id="successUrl" value="" />  
+                        <!-- lp_redirect_url: Optional redirect url when the lead is accepted -->  
+                        <input type="hidden" name="lp_redirect_fail_url" value="https://harpratequiz.com/failed.html" /> 
+                        <input type="hidden" name="lp_s1" id="lp_s1" value="DirectPage">
+                        <input type="hidden" name="lp_s2" id="lp_s2" value="">
+                        <input id="leadid_token" name="jornaya_lead_id" type="hidden" value=""/>
+                    </form>
+<!--             </form>
+ -->    </div>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<!-- jQuery easing plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    
+<!-- JID Script -->
+
+<script id="LeadiDscript" type="text/javascript">
+(function() {
+var s = document.createElement('script');
+s.id = 'LeadiDscript_campaign';
+s.type = 'text/javascript';
+s.async = true;
+s.src = '//create.lidstatic.com/campaign/11536d06-efbe-a9a1-247e-2fcbbac7bfbc.js?snippet_version=2';
+var LeadiDscript = document.getElementById('LeadiDscript');
+LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+})();
+</script>
+<noscript><img src='//create.leadid.com/noscript.gif?lac=0f8580e1-10b6-a5ab-b0df-1a2b8cf787af&lck=11536d06-efbe-a9a1-247e-2fcbbac7bfbc&snippet_version=2' /></noscript>
+
+<!-- JID Script END-->
+
+    <script>
+            function typenext() {
+                var type = document.getElementsByName('type_of_property');
+                if (type[0].checked || type[1].checked || type[2].checked || type[3].checked) {
+                    document.getElementById('type_next').disabled = false;
+                    console.log(document.getElementById('type_next').disabled);
+                }
+    }
+            function typenexta() {
+                var typea = document.getElementsByName('type_of_property');
+                if (typea[4].checked || typea[5].checked || typea[6].checked || typea[7].checked) {
+                    document.getElementById('type_nexta').disabled = false;
+                    // console.log(document.getElementById('type_nexta').disabled);
+                }
+    }
+            function creditnext() {
+                var type1 = document.getElementsByName('credit');
+                if (type1[0].checked || type1[1].checked || type1[2].checked || type1[3].checked) {
+                    document.getElementById('credit_next').disabled = false;
+                }
+    }
+            function creditnexta() {
+                var type1a = document.getElementsByName('credit');
+                if (type1a[4].checked || type1a[5].checked || type1a[6].checked || type1a[7].checked) {
+                    document.getElementById('credit_nexta').disabled = false;
+                }
+    }
+            function typeloannext() {
+                var type2 = document.getElementsByName('type_of_loan');
+                if (type2[0].checked || type2[1].checked || type2[2].checked) {
+                    document.getElementById('type_loan_next').disabled = false;
+                }
+    }
+            function typeloannexta() {
+                var type2a = document.getElementsByName('type_of_loan');
+                if (type2a[3].checked || type2a[4].checked || type2a[5].checked) {
+                    document.getElementById('type_loan_nexta').disabled = false;
+                }
+    }
+            function bankforeclosurenext() {
+                var type3 = document.getElementsByName('bank_foreclosure_in_last_3_years');
+                if (type3[0].checked || type3[1].checked) {
+                    document.getElementById('bank_foreclosure_next').disabled = false;
+                }
+    }
+            function bankforeclosurenexta() {
+                var type3a = document.getElementsByName('bank_foreclosure_in_last_3_years');
+                if (type3a[2].checked || type3a[3].checked) {
+                    document.getElementById('bank_foreclosure_nexta').disabled = false;
+                }
+    }
+    //         function annualincomenext() {
+    //             var type4 = document.getElementsByName('annual_income');
+    //             if (type4[0].checked || type4[1].checked) {
+    //                 document.getElementById('annual_income_next').disabled = false;
+    //             }
+    // }
+    //         function annualincomenexta() {
+    //             var type4a = document.getElementsByName('annual_income');
+    //             if (type4a[2].checked || type4a[3].checked) {
+    //                 document.getElementById('annual_income_nexta').disabled = false;
+    //             }
+    // }
+            function militarynext() {
+                var type5 = document.getElementsByName('served_US_military');
+                if (type5[0].checked || type5[1].checked) {
+                    document.getElementById('military_next').disabled = false;
+                }
+    }
+            function militarynexta() {
+                var type5 = document.getElementsByName('served_US_military');
+                if (type5[2].checked || type5[3].checked) {
+                    document.getElementById('military_nexta').disabled = false;
+                }
+    }
+            function latenext() {
+                var type6 = document.getElementsByName('Late_Mortgage_Payments');
+                if (type6[0].checked || type6[1].checked || type6[2].checked) {
+                    document.getElementById('late_next').disabled = false;
+                }
+    }
+            function latenexta() {
+                var type6a = document.getElementsByName('Late_Mortgage_Payments');
+                if (type6a[3].checked || type6a[4].checked || type6a[5].checked) {
+                    document.getElementById('late_nexta').disabled = false;
+                }
+    }
+            function phasenext() {
+                var type7 = document.getElementsByName('phase_of_project');
+                if (type7[0].checked || type7[1].checked) {
+                    document.getElementById('phase_next').disabled = false;
+                }
+    }
+            function banknext() {
+                var type8 = document.getElementsByName('bank_or_credit_provider');
+                if (type8[0].checked || type8[1].checked || type8[2].checked || type8[3].checked || type8[4].checked || type8[5].checked) {
+                    document.getElementById('bank_next').disabled = false;
+                }
+    }
+            function phasenexta() {
+                var type7aa = document.getElementsByName('phase_of_project');
+                if (type7aa[2].checked || type7aa[3].checked) {
+                    document.getElementById('phase_nexta').disabled = false;
+                }
+    }
+            function banknexta() {
+                var type8aa = document.getElementsByName('bank_or_credit_provider');
+                if (type8aa[6].checked || type8aa[7].checked || type8aa[8].checked || type8aa[9].checked || type8aa[10].checked || type8aa[11].checked) {
+                    document.getElementById('bank_nexta').disabled = false;
+                }
+    }
+            function signednext() {
+                var type9a = document.getElementsByName('signed_a_purchase_contract');
+                if (type9a[0].checked) {
+                    document.getElementById('signed_next').disabled = false;
+                }
+                else {
+                    document.getElementById('signed_next').disabled = false;
+                }
+    }
+            function plannext() {
+                var type10a = document.getElementsByName('Plan_buy_Home');
+                if (type10a[0].checked || type10a[1].checked || type10a[2].checked || type10a[3].checked || type10a[4].checked) {
+                    document.getElementById('plan_next').disabled = false;
+                }
+                else {
+                    document.getElementById('plan_next').disabled = false;
+                }
+    }
+            function propertynext() {
+                var type11a = document.getElementsByName('property_use');
+                if (type11a[0].checked || type11a[1].checked || type11a[2].checked) {
+                    document.getElementById('property_next').disabled = false;
+                }
+                else {
+                    document.getElementById('property_next').disabled = false;
+                }
+    }
+            function estimatednext() {
+                var type12a = document.getElementsByName('estimated_property_value');
+                if (type12a[0].checked || type12a[1].checked || type12a[2].checked) {
+                    document.getElementById('estimated_next').disabled = false;
+                }
+                else {
+                    document.getElementById('estimated_next').disabled = false;
+                }
+    }
+    </script>
+    <script>
+        //jQuery time
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var left, opacity, scale; //fieldset properties which we will animate
+        var animating; //flag to prevent quick multi-click glitches
+
+        $(".next").click(function () {
+            if (animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+
+            //activate next step on progressbar using the index of next_fs
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+            //show the next fieldset
+            next_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function (now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale current_fs down to 80%
+                    scale = 1 - (1 - now) * 0.2;
+                    //2. bring next_fs from the right(50%)
+                    left = (now * 50) + "%";
+                    //3. increase opacity of next_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'position': 'absolute'
+                    });
+                    next_fs.css({
+                        'left': left,
+                        'opacity': opacity
+                    });
+                },
+                duration: 800,
+                complete: function () {
+                    current_fs.hide();
+                    animating = false;
+                },
+                //this comes from the custom easing plugin
+                easing: 'easeInOutBack'
+            });
+        });
+
+        $(".previous").click(function () {
+            if (animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
+
+            //de-activate current step on progressbar
+            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+            //show the previous fieldset
+            previous_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function (now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale previous_fs from 80% to 100%
+                    scale = 0.8 + (1 - now) * 0.2;
+                    //2. take current_fs to the right(50%) - from 0%
+                    left = ((1 - now) * 50) + "%";
+                    //3. increase opacity of previous_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'left': left
+                    });
+                    previous_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'opacity': opacity
+                    });
+                },
+                duration: 800,
+                complete: function () {
+                    current_fs.hide();
+                    animating = false;
+                },
+                //this comes from the custom easing plugin
+                easing: 'easeInOutBack'
+            });
+        });
+        
+        $("#camara6").click(function () {
+            $("#home_6").show();
+            $("#home_4").hide();
+        });
+        $("#camara5").click(function () {
+            $("#home_5").show();
+            $("#home_4").hide();
+        });
+        $("#camara34").click(function () {
+            $("#home_20001").show();
+            $("#home_151").hide();            
+            document.getElementsByName('phase_of_project').value = "NA";
+        });
+        $("#camara33").click(function () {
+            $("#home_161").show();
+            $("#home_151").hide();
+        });
+        $("#camara341").click(function () {
+            $("#home_2000").show();
+            $("#home_15").hide();
+        });
+        $("#camara331").click(function () {
+            $("#home_16").show();
+            $("#home_15").hide();
+        });
+        $("#camara50").click(function () {
+            $("#home_19").show();
+            $("#home_20").hide();
+        });
+        $("#control_01").click(function () {
+            $("#home_2").show();
+            $("#home_1").hide();
+        });
+        $("#control_02").click(function () {
+            $("#home_2111").show();
+            $("#home_1").hide();
+        });
+        $("#camara108").click(function () {
+            $("#home_28").show();
+            $("#home_27").hide();
+        });
+        $("#camara109").click(function () {
+            $("#home_29").show();
+            $("#home_27").hide();
+            document.getElementById('second_mortgage_Interest').value = "0";
+            document.getElementById('second_mortgage_Balance').value = "0";
+
+        });
+        $("#geoo1").click(function () {
+            $("#home_30").show();
+            $("#home_28").hide();
+        });
+        
+        $("#redirect1").click(function () {
+            $("#home_1").show();
+            $("#home_2").hide();
+        });
+    </script>
+    <script type="text/javascript">
+    (function() {
+    var field = 'trusted_form_cert_id';
+    var provideReferrer = false;
+    var invertFieldSensitivity = false;
+    var tf = document.createElement('script');
+    tf.type = 'text/javascript'; tf.async = true;
+    tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
+    '://api.trustedform.com/trustedform.js?provide_referrer=' + escape(provideReferrer) + '&field=' + escape(field) + '&l='+new Date().getTime()+Math.random() + '&invert_field_sensitivity=' + invertFieldSensitivity;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s); }
+    )();
+    </script>
+    <noscript>
+    <img src="http://api.trustedform.com/ns.gif" />
+    </noscript>
+    <script>
+        function ajaxpost() {
+            alert("Form Submitted Successfully");
+        }
+    </script>
+    <script>
+
+    function detectBrowser() {
+    let user_agent; 
+     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
+
+    {
+       // document.getElementById('user_agent');
+       user_agent="OPera";
+    }
+    else if(navigator.userAgent.indexOf("Chrome") != -1 )
+    {
+       // document.getElementById('user_agent');   
+       user_agent="Chrome";
+        }
+    else if(navigator.userAgent.indexOf("Safari") != -1)
+    {
+       user_agent="Safari";    
+    }
+    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+    {
+          // document.getElementById('user_agent');
+          user_agent="Firefox";
+    }
+    else if((navigator.userAgent.indexOf("Microsoft Edge") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+    {
+      user_agent="Microsoft Edge";
+    }  
+    else 
+    {
+       user_agent="Unknown";
+    }
+   document.getElementById('user_agent').value=user_agent;
+   // alert(user_agent);
+   console.log(document.getElementById('user_agent').value);
+    }
+    </script>
+    <script>
+        function storeurl() {
+            var url_string = document.URL; //window.location.href
+            var url = new URL(url_string);
+            var aff_id = url.searchParams.get("affid");
+            var t_id = url.searchParams.get("tid"); 
+            const rid = url.searchParams.get('rid');
+            document.getElementById('lp_s1').value = aff_id;
+            // console.log(document.getElementById('lp_s1').value)
+            document.getElementById('lp_s2').value = t_id;
+            // console.log(document.getElementById('lp_s2').value)
+            let passurl = "https://harpratequiz.com/submitted.html?rid=" + rid;
+            console.log("passurl=",passurl);
+            
+            
+            // Addition by Sohaib Kamran start
+            
+            const first_name = url.searchParams.get("first_name");
+            const last_name = url.searchParams.get("last_name");
+            const phone_home = url.searchParams.get("phone_home");
+            const email_address = url.searchParams.get("email_address");
+            const address = url.searchParams.get("address");
+            const city = url.searchParams.get("city");
+            const state = url.searchParams.get("state");
+            const zip_code = url.searchParams.get("zip_code");
+            console.log("first_name=",first_name);
+            console.log("last_name=",last_name);
+            console.log("phone_home=",phone_home);
+            console.log("email_address=",email_address);
+            console.log("address=",address);
+            console.log("city=",city);
+            console.log("state=",state);
+            console.log("zip_code=",zip_code);
+            document.getElementById('first_name').value = first_name;
+            console.log("first_name new=",document.getElementById('first_name').value);
+            document.getElementById('last_name').value = last_name;
+            document.getElementById('phone_home').value = phone_home;
+            document.getElementById('email_address').value = email_address;
+            document.getElementById('address').value = address;
+            document.getElementById('city').value = city;
+            document.getElementById('state').value = state;
+            document.getElementById('zip_code').value = zip_code;
+                
+            // Addition By Sohaib Kamran Ends Here
+            
+            
+            document.getElementById('successUrl').value = passurl;
+            document.getElementById('type_next').disabled = true;
+            document.getElementById('type_nexta').disabled = true;
+            document.getElementById('credit_next').disabled = true;
+            document.getElementById('credit_nexta').disabled = true;
+            document.getElementById('type_loan_next').disabled = true;
+            document.getElementById('bank_foreclosure_next').disabled = true;
+            document.getElementById('military_next').disabled = true;
+            document.getElementById('military_nexta').disabled = true;
+            document.getElementById('late_next').disabled = true;
+            document.getElementById('phase_next').disabled = true;
+            document.getElementById('bank_next').disabled = true;
+            document.getElementById('signed_next').disabled = true;
+            document.getElementById('plan_next').disabled = true;
+            document.getElementById('property_next').disabled = true;
+            // document.getElementById('estimated_next').disabled = true;
+            document.getElementById('type_loan_nexta').disabled = true;
+            document.getElementById('bank_foreclosure_nexta').disabled = true;
+            document.getElementById('late_nexta').disabled = true;
+            document.getElementById('bank_nexta').disabled = true;
+            document.getElementById('phase_nexta').disabled = true;
+            // console.log(document.getElementById('late_nexta').disabled);
+            // document.getElementById('redirect1').disabled = true;
+            $(document).ready(function () {  
+            $("form").bind("keypress", function (e) {  
+            if (e.keyCode == 13) {  
+            return false;  
+            }  
+            });  
+            });
+        }
+
+        
+    </script>
+</body>
+<!-- Footer Start -->
+<div class="bback">
+          <br>
+            <h4 class="text-center"><b>Copyright 2021.All rights reserved</b></h4>
+            <br><p class="text-center">When inquiring about a loan on this site, this is not a loan application and we are not affiliated with your current mortgage servicer. We are not a lender. This site will connect you with businesses who may provide additional product information and/or assist you with eligibility requirements.  This site may contain affiliate and partner links.  
+This site is not affiliated with any news source or government organization and is not a government agency. This site is not affiliated with HUD, FHA, VA, FNMA or GNMA.
+Contents of this website are copyrighted property of the owner of this website. All trademarks, logos, and service marks (collectively the "Trademarks") displayed are registered and/or unregistered Trademarks of their respective owners. This website and the company that owns it is not responsible for any typographical or photographic errors.
+</p>
+            <hr class="alaa">
+           <!-- overlay k shahkay -->
+           <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+              </div>
+            </div>
+            <div id="myNav1" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+              <div class="overlay-content">
+              </div>
+            </div>
+           <script>
+              function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+              }
+
+              function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+              }
+              function openNav1() {
+                document.getElementById("myNav1").style.width = "100%";
+              }
+
+              function closeNav1() {
+                document.getElementById("myNav1").style.width = "0%";
+              }
+              </script>
+           <!-- overlay k shahkay khtm -->
+            <p style="margin-bottom: 1%; color: white; text-align: center;">
+              <span style="cursor:pointer;"><a target="_blank" href="https://harpratequiz.com/privacy.html" style="color: white;">Privacy Policy</a></span>
+              &nbsp;&nbsp;&nbsp; &nbsp;
+              <span style="cursor:pointer"><a target="_blank" href="https://harpratequiz.com/terms.html" style="color: white;">Terms & Conditions</a></span>
+             &nbsp;&nbsp;&nbsp; &nbsp;
+              <a href="mailto:contact@harpratequiz.com" style="color: white !important" class="text-middle">Contact Us</a></p><br>
+          </div>
+          <!-- Footer End -->
+
+</html>
